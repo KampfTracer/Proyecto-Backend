@@ -1,0 +1,29 @@
+[
+  {
+    "id": "_1488",
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": "_7537",
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": "_8368",
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  }
+]
