@@ -70,5 +70,2381 @@
     "thumbnail": "nueva_laptop.jpg",
     "code": "NL234",
     "stock": 18
+  },
+  {
+    "id": 8,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 10,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 11,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 12,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 14,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 15,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 16,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 18,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 19,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 20,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 22,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 23,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 24,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 26,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 27,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 28,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 30,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 31,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 32,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 34,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 35,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 36,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 38,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 39,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 40,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 42,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 43,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 44,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 46,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 47,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 48,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 50,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 51,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 52,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 54,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 55,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 56,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 58,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 59,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 60,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 62,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 63,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 64,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 66,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 67,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 68,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 70,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 71,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 72,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 74,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 75,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 76,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 78,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 79,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 80,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 82,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 83,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 84,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 86,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 87,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 88,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 90,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 91,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 92,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 94,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 95,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 96,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 98,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 99,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 100,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 102,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 103,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 104,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 106,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 107,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 108,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 110,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 111,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 112,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 114,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 115,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 116,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 118,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 119,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 120,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 122,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 123,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 124,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 126,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 127,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 128,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 130,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 131,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 132,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 134,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 135,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 136,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 138,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 139,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 140,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 142,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 143,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 144,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 146,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 147,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 148,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 150,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 151,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 152,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 154,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 155,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 156,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 158,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 159,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 160,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 162,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 163,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 164,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 166,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 167,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 168,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 170,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 171,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 172,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 174,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 175,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 176,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 178,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 179,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 180,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 182,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 183,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 184,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 186,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 187,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 188,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 190,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 191,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 192,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 194,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 195,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 196,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 198,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 199,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 200,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 202,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 203,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 204,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 206,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 207,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 208,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 210,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 211,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 212,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 214,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 215,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 216,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 218,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 219,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 220,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 222,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 223,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 224,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 226,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 227,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 228,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 230,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 231,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 232,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 234,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 235,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 236,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 238,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 239,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 240,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 242,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 243,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 244,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 246,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 247,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 248,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 250,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 251,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 252,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 254,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 255,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 256,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 258,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 259,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 260,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 262,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 263,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 264,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 266,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 267,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 268,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 270,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 271,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 272,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 274,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 275,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 276,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 278,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 279,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 280,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 282,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 283,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 284,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 286,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 287,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 288,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 290,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 291,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 292,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 294,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 295,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 296,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 298,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 299,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 300,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 302,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 303,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 304,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 306,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 307,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 308,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 310,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 311,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 312,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 314,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 315,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 316,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 318,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 319,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 320,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 322,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 323,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 324,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 326,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 327,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 328,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 330,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 331,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 332,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 334,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 335,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 336,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 338,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 339,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 340,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 342,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 343,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 344,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 346,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 347,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 348,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 350,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 351,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 352,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 354,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 850,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 22
+  },
+  {
+    "id": 355,
+    "title": "Laptop Gamer",
+    "description": "Laptop avanzada con características innovadoras",
+    "price": 1500,
+    "thumbnail": "nueva_laptop.jpg",
+    "code": "NL234",
+    "stock": 18
+  },
+  {
+    "id": 356,
+    "title": "Laptop",
+    "description": "Potente laptop para trabajos intensivos",
+    "price": 1200,
+    "thumbnail": "laptop.jpg",
+    "code": "LT123",
+    "stock": 15
+  },
+  {
+    "id": 357,
+    "title": "Audífonos",
+    "description": "Última Generación y el mejor sonido",
+    "price": 500,
+    "thumbnail": "audifonos.jpg",
+    "code": "AF456",
+    "stock": 20
+  },
+  {
+    "id": 358,
+    "title": "Smartphone",
+    "description": "Teléfono inteligente de última generación",
+    "price": 800,
+    "thumbnail": "smartphone.jpg",
+    "code": "SP789",
+    "stock": 25
   }
 ]
