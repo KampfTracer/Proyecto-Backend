@@ -18,9 +18,9 @@ class ProductManager {
 
   async getProductById(productId) {
     const products = await this.loadProductsFromFile();
-    console.log('IDs de los productos cargados:', products.map(p => p.id));
+    console.log('Todos los IDs de los productos cargados:', products.map(p => p.id));
 
-    const product = products.find((p) => p.id === productId);
+    const product = products.find((p) => p.id == productId);
     console.log(`Buscando producto con ID ${productId}. Producto encontrado:`, product);
 
     return product;
