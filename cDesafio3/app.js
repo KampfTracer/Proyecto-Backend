@@ -1,6 +1,6 @@
 // app.js
 const express = require('express');
-const ProductManager = require('./ProductManager');  // Ajusta esta ruta
+const ProductManager = require('./ProductManager');  
 const app = express();
 const port = 8080;
 const productManager = new ProductManager();
