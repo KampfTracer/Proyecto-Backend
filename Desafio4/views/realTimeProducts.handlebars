@@ -1,0 +1,37 @@
+<!-- views/realTimeProducts.handlebars -->
+<html>
+  <!-- ... (parte del encabezado) ... -->
+  <body>
+    <h1>Lista de Productos en Tiempo Real</h1>
+    <ul id="productList">
+      <!-- La lista se actualizará automáticamente con websockets -->
+      {{#each products}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+
+    <form id="productForm">
+      <label for="productName">Nombre del Producto:</label>
+      <input type="text" id="productName" required>
+      <button type="submit">Agregar Producto</button>
+    </form>
+
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script>
+      const socket = io(); // Conexión WebSocket
+
+      socket.on('updateProductList', (products) => {
+        // Actualizar la lista de productos en tiempo real
+        const productList = document.getElementById('productList');
+        productList.innerHTML = products.map(product => `<li>${product}</li>`).join('');
+      });
+
+      // Lógica para enviar el formulario a través de websockets
+      document.getElementById('productForm').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const productName = document.getElementById('productName').value;
+        socket.emit('addProduct', productName);
+      });
+    </script>
+  </body>
+</html>
