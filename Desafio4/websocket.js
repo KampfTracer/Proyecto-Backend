@@ -17,7 +17,7 @@ module.exports = (io, db) => {
         io.emit('updateProductList', db.get('products').value());
       });
   
-      // Puedes agregar más eventos y lógica aquí según tus necesidades
+      //  Se Puede agregar más eventos y lógica aquí según mis necesidades
     });
   };
   

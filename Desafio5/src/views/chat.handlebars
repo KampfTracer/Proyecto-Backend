@@ -1,0 +1,65 @@
+<!-- chat.handlebars -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+</head>
+<body>
+  <h1>Chat</h1>
+  
+  <!-- Mostrar mensajes existentes -->
+  <div id="chat-messages">
+    <!-- Aquí se mostrarán los mensajes existentes -->
+  </div>
+  
+  <!-- Formulario para enviar mensajes -->
+  <form id="message-form">
+    <input type="text" id="user" placeholder="Nombre de usuario" required>
+    <input type="text" id="message" placeholder="Escribe tu mensaje" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    // Lógica para enviar mensajes
+    document.getElementById('message-form').addEventListener('submit', async function (event) {
+      event.preventDefault();
+
+      const user = document.getElementById('user').value;
+      const message = document.getElementById('message').value;
+
+      try {
+        // Enviar mensaje a la colección "messages" mediante una petición POST
+        const response = await fetch('/api/messages', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ user, message }),
+        });
+
+        if (response.ok) {
+          // Limpiar el formulario después de enviar el mensaje
+          document.getElementById('user').value = '';
+          document.getElementById('message').value = '';
+
+          // Actualizar los mensajes mostrados en el chat (opcional)
+          // Puedes implementar la lógica para mostrar los mensajes sin recargar la página
+          // por ejemplo, agregando el nuevo mensaje al DOM.
+
+          // E.g., si tienes un div con id="chat-messages":
+          // const chatMessages = document.getElementById('chat-messages');
+          // const newMessageElement = document.createElement('div');
+          // newMessageElement.textContent = `${user}: ${message}`;
+          // chatMessages.appendChild(newMessageElement);
+        } else {
+          console.error('Error al enviar el mensaje:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error al enviar el mensaje:', error.message);
+      }
+    });
+  </script>
+</body>
+</html>
