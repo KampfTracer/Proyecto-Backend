@@ -1,23 +1,28 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import expressHandlebars from 'express-handlebars'; // Cambio aquí
 import usuariosRouter from './routes/usuarios.js';
 import Product from './src/dao/models/productsmodels.js';
 import Cart from './src/dao/models/cartsmodels.js';
 import Message from './src/dao/models/messagesmodels.js';
+import path from 'path';
 
 const PORT = 3000;
 
 const app = express();
 
+// Configuración de Handlebars
+app.engine('handlebars', expressHandlebars({
+  defaultLayout: 'main',
+  extname: 'handlebars',
+}));
+app.set('view engine', 'handlebars');
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-    res.setHeader("Content-Type", "text/plain");
-    res.status(200).send("OK");
-});
-
-// Utiliza tu enrutador de usuarios
+// Rutas para usuarios
 app.use("/api/usuarios", usuariosRouter);
 
 // Rutas para productos
@@ -73,18 +78,22 @@ cartsRouter.get('/:cid', async (req, res) => {
 const messagesRouter = express.Router();
 app.use('/api/messages', messagesRouter);
 
-// ... Configuración adicional de rutas y funciones según sea necesario ...
+// Ruta para el chat
+app.get('/chat', (req, res) => {
+  // Lógica para obtener mensajes del chat desde MongoDB y pasarlos a la vista
+  res.render('chat');
+});
 
 const server = app.listen(PORT, () => {
-    console.log(`Server escuchando en puerto ${PORT}`);
+  console.log(`Server escuchando en puerto ${PORT}`);
 });
 
 try {
-    await mongoose.connect("mongodb+srv://FranciscoAguilera:Coder1996@kampf96.kkrwrxi.mongodb.net/eccommerce?retryWrites=true&w=majority", {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("DB online..!!");
+  await mongoose.connect("mongodb+srv://FranciscoAguilera:Coder1996@kampf96.kkrwrxi.mongodb.net/eccommerce?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  console.log("DB online..!!");
 } catch (error) {
-    console.log(error.message);
+  console.log(error.message);
 }
