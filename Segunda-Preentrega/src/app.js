@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Rutas
 app.use('/products', productRouter); // Cambia '/' a '/products'
-app.use('/api/carts', cartRouter); // Cambia '/api' a '/api/carts'
+app.use('/carts', cartRouter); // Cambia '/api/carts' a '/carts'
 
 // Inicialización del servidor y conexión a la base de datos
 const startServer = async () => {

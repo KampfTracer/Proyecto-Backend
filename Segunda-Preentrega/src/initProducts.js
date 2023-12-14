@@ -1,6 +1,6 @@
 // init/initProducts.js
 import mongoose from 'mongoose';
-import Product from './models/product.model.js';
+import Product from '../src/models/product.model';
 
 const productsData = [
   { productId: 'p1', name: 'One Piece Vol. 1', price: 15, category: 'Manga', availability: true },
