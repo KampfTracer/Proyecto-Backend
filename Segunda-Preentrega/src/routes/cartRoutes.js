@@ -6,7 +6,7 @@ import Product from '../models/product.model.js';
 const router = express.Router();
 
 // Ruta para agregar productos al carrito
-router.post('/api/carts/:cid/products/:pid', async (req, res) => {
+router.post('/:cid/products/:pid', async (req, res) => {
   try {
     const { cid, pid } = req.params;
 
@@ -47,7 +47,7 @@ router.post('/api/carts/:cid/products/:pid', async (req, res) => {
 });
 
 // Ruta para ver el carrito
-router.get('/:cid', async (req, res) => { // Elimina '/api/carts'
+router.get('/:cid', async (req, res) => {
   try {
     const { cid } = req.params;
 
@@ -60,8 +60,9 @@ router.get('/:cid', async (req, res) => { // Elimina '/api/carts'
     res.status(500).json({ error: 'Error al cargar el carrito.' });
   }
 });
+
 // Ruta para eliminar un producto específico del carrito
-router.delete('/api/carts/:cid/products/:pid', async (req, res) => {
+router.delete('/:cid/products/:pid', async (req, res) => {
   try {
     const { cid, pid } = req.params;
 
@@ -86,7 +87,7 @@ router.delete('/api/carts/:cid/products/:pid', async (req, res) => {
 });
 
 // Ruta para actualizar el carrito con un arreglo de productos
-router.put('/api/carts/:cid', async (req, res) => {
+router.put('/:cid', async (req, res) => {
   try {
     const { cid } = req.params;
     const { items } = req.body;
@@ -117,7 +118,7 @@ router.put('/api/carts/:cid', async (req, res) => {
 });
 
 // Ruta para eliminar todos los productos del carrito
-router.delete('/api/carts/:cid', async (req, res) => {
+router.delete('/:cid', async (req, res) => {
   try {
     const { cid } = req.params;
 

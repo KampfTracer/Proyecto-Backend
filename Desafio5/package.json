@@ -1,18 +1,19 @@
 {
-  "name": "desafio5",
+  "name": "desafio-5",
   "version": "1.0.0",
   "description": "",
-  "main": "app.mjs",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.mjs"
+    "dev": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^7.1.2"
-  },
-  "type": "module"
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^8.0.2",
+    "socket.io": "^4.7.2"
+  }
 }
