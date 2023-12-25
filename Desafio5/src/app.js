@@ -2,11 +2,11 @@
 import express from 'express';
 import { engine } from 'express-handlebars';
 import { join } from 'path';
-import { router as viewsRouter } from './routes/routes.views.js'; // Actualizado el path
+import { router as viewsRouter } from './routes/routes.views.js';
 import { productsRouter } from './routes/routes.products.js';
 import { cartsRouter } from './routes/routes.carts.js';
 import { Server } from 'socket.io';
-import { messagesModel } from './dao/models/messages.model.js';
+import { messagesModel } from './dao/models/messages.model.js'; // Ajusta la ruta si es necesario
 import __dirname from './utils.js';
 import mongoose from 'mongoose';
 
@@ -34,7 +34,7 @@ async function connectDB() {
     await mongoose.connect("mongodb+srv://FranciscoAguilera:Coder1996@kampf96.kkrwrxi.mongodb.net/eccommerce?retryWrites=true&w=majority", { dbName: 'ecommerce' });
     console.log('DB Online');
   } catch (error) {
-    console.log(error);
+    console.error('Error connecting to the database:', error);
   }
 }
 
@@ -43,7 +43,8 @@ async function getChats() {
     let result = await messagesModel.find();
     return result;
   } catch (error) {
-    console.log('Error loading the chats: ', error);
+    console.error('Error loading the chats:', error);
+    throw error;
   }
 }
 
@@ -52,7 +53,8 @@ async function saveChats({ sender, message }) {
     let result = await messagesModel.create({ email: sender, message: message });
     return result;
   } catch (error) {
-    console.log('Error saving the chats: ', error);
+    console.error('Error saving the chats:', error);
+    throw error;
   }
 }
 
