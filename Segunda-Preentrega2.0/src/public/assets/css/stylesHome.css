@@ -23,25 +23,25 @@ div {
 
 /* Estilo para la clase "mensaje" */
 .mensaje {
-    background-color: #f2a5a5; /* Color de fondo */
-    display: inline-block; /* Hace que el contenedor se ajuste al contenido */
-    font-size: 18px; /* Tamaño de fuente */
-    font-weight: bold; /* Peso de la fuente */
-    color: #28a745; /* Color de letra para la clase "mensaje" */
-    border: 1px solid #28a745; /* Borde de 1px sólido con color verde */
-    padding: 8px; /* Espaciado interno para el contenido del mensaje */
-    border-radius: 5px; /* Borde redondeado */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    text-align: center; /* Centrar el texto dentro del contenedor */
-    margin: auto; /* Centrar el contenedor en la página */
+    background-color: #f2a5a5;
+    display: inline-block; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #28a745; 
+    border: 1px solid #28a745; 
+    padding: 8px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto; 
 }
 
-/* Estilo para el enlace */
+
 a {
-    color: #007BFF; /* Color del enlace no visitado */
-    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: #007BFF; 
+    text-decoration: none; 
 }
 
 a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+    text-decoration: underline; 
 }

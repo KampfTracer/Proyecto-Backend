@@ -1,13 +1,11 @@
-//Se trabaja con ESC 6 utilizando import y export
 
-//Agregando File System para trabajar con archivos
 
 import { existsSync, promises } from "fs";
 
-//************************ //
-//Limpiamos la consola
+
+
 console.clear();
-//************************ //
+
 
 export class ProductManager {
   constructor(rutaArchivo) {

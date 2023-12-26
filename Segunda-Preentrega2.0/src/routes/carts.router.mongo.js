@@ -77,9 +77,7 @@ router.post("/:cid/product/:pid", async (req, res) => {
   let { cid } = req.params;
   let { pid } = req.params;
 
-  //NO se parsea
-  // cid = parseInt(cid);
-  // pid = parseInt(pid);
+
 
   console.log("codigo de carrito", cid);
   console.log("codigo de producto", pid);
