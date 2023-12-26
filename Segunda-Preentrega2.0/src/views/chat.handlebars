@@ -1,21 +1,67 @@
-<h2>Chat</h2>
-<hr>
-<a href="/">Home Page</a>
-<hr>
-<a href="/realtimeproducts">Realtime Products</a>
-<hr>
-<a href="/products">Products</a>
-<hr />
-<input type="text" id="mensaje">
-<div id="mensajes"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
 
-<br>
+        h2 {
+            color: #333;
+        }
 
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
 
-{{!-- Para trabajar con Sweet alert --}}
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
-<script src="socket.io/socket.io.js"></script>
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 10px;
+        }
 
-<script src="assets/scripts/chat.js"></script>
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
 
+        #mensajes {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Chat</h2>
+    <hr>
+    <a href="/">Home Page</a>
+    <hr>
+    <a href="/realtimeproducts">Realtime Products</a>
+    <hr>
+    <a href="/products">Products</a>
+    <hr>
 
+    <input type="text" id="mensaje">
+    <div id="mensajes"></div>
+    
+    <br>
+
+    <!-- Para trabajar con SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="socket.io/socket.io.js"></script>
+
+    <script src="assets/scripts/chat.js"></script>
+</body>
+</html>

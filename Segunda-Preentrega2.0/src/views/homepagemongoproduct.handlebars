@@ -1,61 +1,125 @@
-<h2>Producto</h2>
-<a href="/realtimeproducts">Realtime Products</a>
-<hr />
-<a href="/chat">Chat</a>
-<hr />
-<a href="/products">Products</a>
-<hr />
-<ul>
-  {{!-- {{#each existe}} --}}
-  <div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
 
-    <h3>ID: {{_id}}</h3>
-    <h3>Título: {{title}}</h3>
+        h2 {
+            color: #333;
+        }
 
-    <h3>Descripción: {{description}}</h3>
-    <h3>Precio: {{price}}</h3>
-    <h3>Imagen: {{thumbnail}}</h3>
-    <h3>Código: {{code}}</h3>
-    <h3>Stock: {{stock}}</h3>
-    <h3>Categoría: {{category}}</h3>
-    <h3>Status: {{status}}</h3>
-    <br />
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        span {
+            color: #777;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 8px;
+            background-color: #28a745; /* Cambiar el color del botón según tus preferencias */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Producto</h2>
+    <a href="/realtimeproducts">Realtime Products</a>
     <hr />
-  </div>
+    <a href="/chat">Chat</a>
+    <hr />
+    <a href="/products">Products</a>
+    <hr />
 
-  <div>
-  <h3>Listado ID de carritos</h3>
-  <span>NOTA:Solo debe agregar un solo carrito</span>
-  <br>
-  <br>
-<!-- Agregamos el método POST y la acción "/add-to-cart" al formulario -->
-<form method="post" action="/api/cartsmongo/add-to-cart">
-  {{#each carts}}
-    <label>
-       <input type="radio" name="cartId" value="{{this._id}}">
-      ID: {{this._id}}
-    </label>
-    <br>
-  {{/each}}
+    <ul>
+        <div>
+            <h3>ID: {{_id}}</h3>
+            <h3>Título: {{title}}</h3>
+            <h3>Descripción: {{description}}</h3>
+            <h3>Precio: {{price}}</h3>
+            <h3>Imagen: {{thumbnail}}</h3>
+            <h3>Código: {{code}}</h3>
+            <h3>Stock: {{stock}}</h3>
+            <h3>Categoría: {{category}}</h3>
+            <h3>Status: {{status}}</h3>
+            <br />
+            <hr />
+        </div>
 
-  <!-- Agregamos campos ocultos con la información del producto -->
-  <input type="hidden" name="productId" value="{{_id}}">
-  <input type="hidden" name="title" value="{{title}}">
-  <input type="hidden" name="description" value="{{description}}">
-  <input type="hidden" name="price" value="{{price}}">
-  <input type="hidden" name="thumbnail" value="{{thumbnail}}">
-  <input type="hidden" name="code" value="{{code}}">
-  <input type="hidden" name="stock" value="{{stock}}">
-  <input type="hidden" name="category" value="{{category}}">
-  <input type="hidden" name="status" value="{{status}}">
+        <div>
+            <h3>Listado ID de carritos</h3>
+            <span>NOTA: Solo debe agregar un solo carrito</span>
+            <br>
+            <br>
+            <form method="post" action="/api/cartsmongo/add-to-cart">
+                {{#each carts}}
+                    <label>
+                        <input type="radio" name="cartId" value="{{this._id}}">
+                        ID: {{this._id}}
+                    </label>
+                    <br>
+                {{/each}}
 
-  <button type="submit">Agregar al carrito</button>
-</form>
-</div>
+                <input type="hidden" name="productId" value="{{_id}}">
+                <input type="hidden" name="title" value="{{title}}">
+                <input type="hidden" name="description" value="{{description}}">
+                <input type="hidden" name="price" value="{{price}}">
+                <input type="hidden" name="thumbnail" value="{{thumbnail}}">
+                <input type="hidden" name="code" value="{{code}}">
+                <input type="hidden" name="stock" value="{{stock}}">
+                <input type="hidden" name="category" value="{{category}}">
+                <input type="hidden" name="status" value="{{status}}">
 
-
-
-</ul>
-
-{{! <script src="socket.io/socket.io.js"></script>
-<script src="assets/scripts/home.js"></script> }}
+                <button type="submit">Agregar al carrito</button>
+            </form>
+        </div>
+    </ul>
+</body>
+</html>

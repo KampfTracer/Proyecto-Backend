@@ -1,39 +1,94 @@
-<h2>Productos en Mongo Atlas:</h2>
-<a href="/">Home Page</a>
-<hr>
-<a href="/realtimeproducts">Realtime Products</a>
-<hr>
-<a href="/chat">Chat</a>
-<hr />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
 
-<ul>
-    {{#each productos}}
-        <li>
-            {{this.title}} {{this.description}}  {{this.price}}  {{this.thumbnail}}  {{this.stock}}  {{this.category}} - <strong>Code:</strong> <i>{{this.code}}- <strong>ID:</strong> <i>{{this._id}}
+        h2 {
+            color: #333;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #28a745; /* Cambiar el color del enlace según tus preferencias */
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Productos en Mongo Atlas:</h2>
+    <a href="/">Home Page</a>
+    <hr>
+    <a href="/realtimeproducts">Realtime Products</a>
+    <hr>
+    <a href="/chat">Chat</a>
+    <hr />
+
+    <ul>
+        {{#each productos}}
+            <li>
+                <strong>{{this.title}}</strong>
+                <p>{{this.description}}</p>
+                <p>Precio: ${{this.price}}</p>
+                <p>Stock: {{this.stock}}</p>
+                <p>Categoría: {{this.category}}</p>
+                <strong>Code:</strong> <i>{{this.code}}</i>
+                <br />
+                <strong>ID:</strong> <i>{{this._id}}</i>
                 <a href="/products/{{this._id}}">Ver producto</a>
-            </i>
-        </li>
-    {{/each}}
-</ul>
-<br>
+            </li>
+        {{/each}}
+    </ul>
+    <br>
 
-<br>
-{{!-- Modificando para que los datos incrementen de  /products/ --}}
-<a href="/products/?pagina=1&limit={{limit}}&sort={{sortDirection}}">Pag.1</a>
+    <a href="/products/?pagina=1&limit={{limit}}&sort={{sortDirection}}">Pag. 1</a>
 
-{{#if hasPrevPage}}
-    <a href="/products/?pagina={{prevPage}}&limit={{limit}}&sort={{sortDirection}}">Pag. Ant.</a>
-{{else}}
-<span>Pag. Ant.</span>
-{{/if}}
+    {{#if hasPrevPage}}
+        <a href="/products/?pagina={{prevPage}}&limit={{limit}}&sort={{sortDirection}}">Pag. Ant.</a>
+    {{else}}
+        <span>Pag. Ant.</span>
+    {{/if}}
 
+    {{#if hasNextPage}}
+        <a href="/products/?pagina={{nextPage}}&limit={{limit}}&sort={{sortDirection}}">Pag. Sig.</a>
+    {{else}}
+        <span>Pag. Sig.</span>
+    {{/if}}
 
-{{#if hasNextPage}}
-    <a href="/products/?pagina={{nextPage}}&limit={{limit}}&sort={{sortDirection}}">Pag. Sig.</a>
-{{else}}
-    <span>Pag. Sig.</span>
-{{/if}}
-
-
-
-<a href="/products/?pagina={{totalPages}}&limit={{limit}}&sort={{sortDirection}}">Ult. Pag.</a>
+    <a href="/products/?pagina={{totalPages}}&limit={{limit}}&sort={{sortDirection}}">Ult. Pag.</a>
+</body>
+</html>

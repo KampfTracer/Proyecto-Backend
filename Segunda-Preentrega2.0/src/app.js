@@ -117,7 +117,7 @@ socket.on("disconnect", ()=>{
 //MOGOSOOSE genera conexion a la base datos ATLAS
 
 try {
-  await mongoose.connect('mongodb+srv://FranciscoAguilera:Coder1996@kampf96.kkrwrxi.mongodb.net/?retryWrites=true&w=majority', {dbName: 'ecommerce'})
+  await mongoose.connect('mongodb+srv://FranciscoAguilera:Coder1996@kampf96.kkrwrxi.mongodb.net/?retryWrites=true&w=majority', {dbName: 'eccommerce'})
   console.log('DB Online......!!!!')
 } catch (error) {
   console.log(error.message)

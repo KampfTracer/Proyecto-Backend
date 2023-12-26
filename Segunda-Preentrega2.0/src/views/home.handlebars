@@ -1,35 +1,83 @@
-<h2>Home Page</h2>
-<a href="/realtimeproducts">Realtime Products</a>
-<hr>
-<a href="/chat">Chat</a>
-<hr />
-<a href="/products">Products</a>
-<hr />
-<ul>
-  {{#each resultado}}
-    <div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
 
-      <h3>ID: {{this.id}}</h3>
-      <h3>Título: {{this.title}}</h3>
+        h2 {
+            color: #333;
+        }
 
-      <h3>Descripción: {{this.description}}</h3>
-      <h3>Precio: {{this.price}}</h3>
-      <h3>Imagen: {{this.thumbnail}}</h3>
-      <h3>Código: {{this.code}}</h3>
-      <h3>Stock: {{this.stock}}</h3>
-      <h3>Categoría: {{this.category}}</h3>
-      <h3>Status: {{this.status}}</h3>
-      <br />
-      <hr />
-    </div>
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            margin: 10px 0;
+        }
 
-  {{/each}}
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 10px;
+        }
 
-  <div id="divId">
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-  </div>
+        div {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
 
-</ul>
+        h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Home Page</h2>
+    <a href="/realtimeproducts">Realtime Products</a>
+    <hr>
+    <a href="/chat">Chat</a>
+    <hr />
+    <a href="/products">Products</a>
+    <hr />
 
-<script src="socket.io/socket.io.js"></script>
-<script src="assets/scripts/home.js"></script>
+    <ul>
+        {{#each resultado}}
+            <div>
+                <h3>ID: {{this.id}}</h3>
+                <h3>Título: {{this.title}}</h3>
+                <h3>Descripción: {{this.description}}</h3>
+                <h3>Precio: {{this.price}}</h3>
+                <h3>Imagen: {{this.thumbnail}}</h3>
+                <h3>Código: {{this.code}}</h3>
+                <h3>Stock: {{this.stock}}</h3>
+                <h3>Categoría: {{this.category}}</h3>
+                <h3>Status: {{this.status}}</h3>
+                <br />
+                <hr />
+            </div>
+        {{/each}}
+
+        <div id="divId"></div>
+    </ul>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="assets/scripts/home.js"></script>
+</body>
+</html>
