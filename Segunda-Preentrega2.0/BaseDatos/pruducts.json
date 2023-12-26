@@ -1,0 +1,65 @@
+[
+    {
+         "id": 1,
+         "title": "One Piece",
+         "description": "Manga",
+         "price": 70,
+         "thumbnail": [
+              
+         ],
+         "code": "A33313",
+         "stock": 130,
+         "category": "Manga",
+         "status": true
+    },
+    {
+         "id": 2,
+         "title": "Naruto",
+         "description": "Manga",
+         "price": 10,
+         "thumbnail": [
+            
+         ],
+         "code": "ABC002",
+         "stock": 10,
+         "category": "Manga",
+         "status": true
+    },
+    {
+         "id": 3,
+         "title": "Death Note",
+         "description": "Manga",
+         "price": 100,
+         "thumbnail": [
+          
+         ],
+         "code": "ABC003",
+         "stock": 10,
+         "category": "Manga",
+         "status": true
+    },
+    {
+         "id": 4,
+         "title": "Demon Slayer",
+         "description": "Manga",
+         "price": 100,
+         "thumbnail": [
+             
+         ],
+         "code": "ABC004",
+         "stock": 10,
+         "category": "Manga",
+         "status": true
+    },
+    {
+         "id": 5,
+         "title": "Fullmetal Alchemist",
+         "description": "Manga",
+         "price": 100,
+         "thumbnail": [],
+         "code": "ABC0eee",
+         "stock": 10,
+         "category": "Manga",
+         "status": true
+    }
+]

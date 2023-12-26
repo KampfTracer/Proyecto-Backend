@@ -1,4 +1,3 @@
-// app.js
 import path from 'path';
 import express from 'express';
 import exphbs from 'express-handlebars';
@@ -31,15 +30,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Rutas
 
 // Cadena de conexión directa a MongoDB
-const dbURI = 'mongodb://FranciscoAguilera:Coder1996@kampf96.kkrwrxi.mongodb.net/eccommerce?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://FranciscoAguilera:Coder1996@kampf96.kkrwrxi.mongodb.net/?retryWrites=true&w=majority';
 
 // Inicialización del servidor y conexión a la base de datos
 const startServer = async () => {
   try {
-    await mongoose.connect(dbURI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(dbURI);
     console.log('Conexión a DB establecida');
 
     const server = app.listen(PORT, () => {
