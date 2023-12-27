@@ -1,0 +1,40 @@
+<!-- views/layout/main.handlebars -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo base para los botones */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Cambio de color al pasar el ratón sobre el botón */
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    {{{body}}}
+    <br><br>
+
+    <!-- Agrega clases a los enlaces para aplicar estilos -->
+    <a class="btn" href="/">Home Page</a>
+    <a class="btn" href="/login">Login Page</a>
+    <a class="btn" href="/registro">Registro</a>
+    <a class="btn" href="/perfil">Perfil</a>
+    <a class="btn" href="/api/sessions/logout">Logout</a>
+
+</body>
+</html>

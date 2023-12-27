@@ -1,3 +1,16 @@
+
+http://localhost:3000/api/sessions/callbackGithub
+App ID: 752183
+Client ID: Iv1.c5336e4be86af1e0
+Clave : 9a1c10917a971f20848f569f55ea5631c5b11c3e
+
+
+
+
+
+
+
+
 /*/const productsData = [
   { name: 'One Piece Vol. 1', price: 15, category: 'Manga', availability: true },
   { name: 'Naruto Vol. 1', price: 12, category: 'Manga', availability: true },
