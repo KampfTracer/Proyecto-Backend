@@ -10,6 +10,8 @@ import { fileURLToPath } from 'url';
 import { initializeSocket } from './utils/socketioServer.js';
 import { config } from './config/config.dotenv.js';
 import { errorHandler } from './middleware/errorHandler.js';
+import { loggerMiddleware } from './middleware/logger.js';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,6 +23,7 @@ app.use(express.urlencoded({extended:true}));
 
 initializePassport()
 app.use(passport.initialize())
+app.use(loggerMiddleware)
 
 const port = config.PORT;
 import productsRouter from './routes/products-router.js';
@@ -32,7 +35,7 @@ import productsviewRouter from './routes/products-view-router.js';
 import specificCart from './routes/specificCart-router.js';
 import sessionRouter from './routes/session-router.js';
 import productsMocks from './routes/productsMocks-router.js';
-
+import loggerTest from './routes/loggerTest-router.js';
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -51,6 +54,7 @@ app.use('/realtimeproducts', realTimeProductRouter);
 app.use('/products', productsviewRouter);
 app.use('/carts', specificCart);
 app.use('/mockingproducts', productsMocks);
+app.use('/loggertest', loggerTest);
 
 app.use(errorHandler);
 

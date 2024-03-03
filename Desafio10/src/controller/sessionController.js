@@ -10,13 +10,14 @@ class SessionController {
                 return next(err);
             }
             if (!user) {
+                req.logger.warning(`User using invalid credentials`)
                 return res.redirect('/login?error=' + info.message);
             }
     
             const token = generateToken(user);
-    
+            
             res.cookie("ecommerce", token, { maxAge: 1000 * 60 * 60, httpOnly: true });
-    
+            req.logger.info(`User ${user.email} logged in`)
             res.redirect('/products?message=You logged in correctly');
         })(req, res, next);
     };
@@ -30,7 +31,7 @@ class SessionController {
                 return res.redirect('/register?error=' + info.message)
             }
             let email = user.email
-    
+            req.logger.info(`User ${email} created`)
             res.redirect(`/login?message=User ${email} created successfully!`);
         })(req, res, next)
     };
@@ -38,13 +39,19 @@ class SessionController {
 
     githubCallBack = async (req, res) => {
         const token = generateToken(req.user);
-    
+        req.logger.info(`User ${req.user.email} logged with Github`)
         res.cookie("ecommerce", token, { maxAge: 1000 * 60 * 60, httpOnly: true });
     
         res.redirect('/products?message=You logged in correctly');
     }
 
     userLogout = async (req, res) => {
+        if (req.user && req.user.email) {
+            req.logger.info(`User ${req.user.email} logged out`);
+        } else {
+            // Manejo si req.user o req.user.email es undefined
+            req.logger.error('Unable to determine user during logout');
+        }
         res.clearCookie('ecommerce');
         res.redirect('/login');
     };

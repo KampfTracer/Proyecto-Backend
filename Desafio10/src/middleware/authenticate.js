@@ -2,12 +2,12 @@ import { config } from '../config/config.dotenv.js';
 import jwt from 'jsonwebtoken'
 
 const auth = (req, res, next) => {
-    if (!req.cookies.ecommerceJaviCookie) {
+    if (!req.cookies.ecommerce) {
         res.setHeader('Content-Type', 'application/json');
         return res.redirect('/login');
     }
 
-    let token = req.cookies.ecommerceJaviCookie
+    let token = req.cookies.ecommerce
 
     try {
         let user = jwt.verify(token, config.SECRETCODE)
