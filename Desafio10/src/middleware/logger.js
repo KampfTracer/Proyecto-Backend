@@ -1,11 +1,12 @@
 import winston from 'winston';
 import { config } from '../config/config.dotenv.js';
 
-const filterInfo=winston.format((info)=>{
-    if(info.level==="info"){
-        return info
+// Filtra solo mensajes de nivel "info"
+const filterInfo = winston.format((info) => {
+    if (info.level === "info") {
+        return info;
     }
-})
+});
 
 const customLevels = {
     levels: {
@@ -18,64 +19,61 @@ const customLevels = {
     }
 };
 
-const logger = winston.createLogger(
-    {
-        levels: customLevels.levels,
-        transports: [
-            new winston.transports.File(
-                {
-                    level: "info",
-                    filename: "../src/logs/info.log",
-                    format: winston.format.combine(
-                        filterInfo(),
-                        winston.format.timestamp(),
-                        winston.format.json()
-                    )
-                }
-            ),
-            new winston.transports.File(
-                {
-                    level: "error",
-                    filename: "../src/logs/errors.log",
-                    format: winston.format.combine(
-                        winston.format.timestamp(),
-                        winston.format.json()
-                    )
-                }
-            ),
-        ]
-    }
-)
+// Configuración del logger
+const logger = winston.createLogger({
+    levels: customLevels.levels,
+    transports: [
+        // Transporte para registros de nivel "info"
+        new winston.transports.File({
+            level: "info",
+            filename: "../src/logs/info.log",
+            format: winston.format.combine(
+                filterInfo(),
+                winston.format.timestamp(),
+                winston.format.json()
+            )
+        }),
+        // Transporte para registros de nivel "error"
+        new winston.transports.File({
+            level: "error",
+            filename: "../src/logs/errors.log",
+            format: winston.format.combine(
+                winston.format.timestamp(),
+                winston.format.json()
+            )
+        }),
+    ]
+});
 
+// Transporte para registros en la consola (solo en desarrollo)
+const developmentLogger = new winston.transports.Console({
+    level: "debug",
+    format: winston.format.combine(
+        winston.format.colorize({
+            colors: {
+                fatal: "red",
+                error: "red",
+                warning: "yellow",
+                info: "green",
+                http: "cyan",
+                debug: "blue"
+            }
+        }),
+        winston.format.timestamp(),
+        winston.format.simple()
+    )
+});
 
-const developmentLogger = new winston.transports.Console(
-    {
-        level: "debug",
-        format: winston.format.combine(
-            winston.format.colorize({
-                colors: { 
-                    fatal: "red",
-                    error: "red",
-                    warning: "yellow",
-                    info: "green",
-                    http: "cyan",
-                    debug: "blue"
-                }
-            }),
-            winston.format.timestamp(),
-            winston.format.simple()
-        )        
-        
-    }
-)
-
+// Agrega el transporte de consola solo en modo desarrollo
 if (config.MODE === "development") {
-    logger.add(developmentLogger)
+    logger.add(developmentLogger);
 }
 
-
+// Middleware para agregar el logger a la solicitud
 export const loggerMiddleware = (req, res, next) => {
-    req.logger = logger
+    req.logger = logger;
 
-    next()
-}
+    next();
+};
+
+export default { loggerMiddleware, logger };

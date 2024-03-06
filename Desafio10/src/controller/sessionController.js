@@ -46,12 +46,7 @@ class SessionController {
     }
 
     userLogout = async (req, res) => {
-        if (req.user && req.user.email) {
-            req.logger.info(`User ${req.user.email} logged out`);
-        } else {
-            // Manejo si req.user o req.user.email es undefined
-            req.logger.error('Unable to determine user during logout');
-        }
+        req.logger.info(`User ${req.user.email} logged out`)
         res.clearCookie('ecommerce');
         res.redirect('/login');
     };

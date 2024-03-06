@@ -32,9 +32,23 @@
     <a href="/chat">
         <h3>Chat</h3>
     </a>
+    <a href="/api/users/premium/{{session.user._id}}">
+        <h3>Change Role</h3>
+    </a>
+    {{/if}}
+    {{#if (eq session.user.role "premium")}}
+    <a href="/chat">
+        <h3>Chat</h3>
+    </a>
+    <a href="/api/users/premium/{{session.user._id}}">
+        <h3>Change Role</h3>
+    </a>
     {{/if}}
     <a href="/profile">
         <h3>Profile</h3>
+    </a>
+    <a href="/loggertest">
+        <h3>LoggerTest</h3>
     </a>
     <a href="/api/sessions/logout" class="logout">
         <h3>Logout</h3>

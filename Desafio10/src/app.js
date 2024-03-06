@@ -1,6 +1,6 @@
 import express from 'express';
-import mongoose from 'mongoose'
-import cookieParser from 'cookie-parser'
+import mongoose from 'mongoose';
+import cookieParser from 'cookie-parser';
 import passport from 'passport';
 import { initializePassport } from './config/config.passport.js';
 import { engine } from 'express-handlebars';
@@ -10,20 +10,20 @@ import { fileURLToPath } from 'url';
 import { initializeSocket } from './utils/socketioServer.js';
 import { config } from './config/config.dotenv.js';
 import { errorHandler } from './middleware/errorHandler.js';
-import { loggerMiddleware } from './middleware/logger.js';
-
+import loggerModule from './middleware/logger.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const { loggerMiddleware, logger } = loggerModule;
 
 const app = express();
-app.use(cookieParser())
-app.use(express.urlencoded({extended:true}));
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
 
-initializePassport()
-app.use(passport.initialize())
-app.use(loggerMiddleware)
+initializePassport();
+app.use(passport.initialize());
+app.use(loggerMiddleware);
 
 const port = config.PORT;
 import productsRouter from './routes/products-router.js';
@@ -36,6 +36,7 @@ import specificCart from './routes/specificCart-router.js';
 import sessionRouter from './routes/session-router.js';
 import productsMocks from './routes/productsMocks-router.js';
 import loggerTest from './routes/loggerTest-router.js';
+import usersRouter from './routes/users-router.js';
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -48,6 +49,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/products', productsRouter);
 app.use('/api/carts', cartRouter);
 app.use('/api/sessions', sessionRouter);
+app.use('/api/users', usersRouter);
 app.use('/', homeRouter);
 app.use('/chat', chatRouter);
 app.use('/realtimeproducts', realTimeProductRouter);
@@ -63,15 +65,16 @@ app.use((req, res) => {
 });
 
 const server = app.listen(port, () => {
-    console.log(`Servidor encendido y escuchando el puerto ${port}`);
+    logger.info(`Servidor encendido y escuchando el puerto ${port}`);
 });
 
 // Conexión MongoDB
 try {
-    await mongoose.connect(config.MONGO_URL, { dbName: config.DBNAME })
-    console.log('DataBase Online!')
+    await mongoose.connect(config.MONGO_URL, { dbName: config.DBNAME });
+    logger.info('DataBase Online!');
 } catch (error) {
-    console.log(error.message)
+    logger.fatal(error.message);
 }
+
 // Inicio Socket.io
-initializeSocket(server, app);
+initializeSocket(server, app, logger);

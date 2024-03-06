@@ -1,6 +1,7 @@
 import express from 'express';
 import passport from 'passport';
 import sessionController from '../controller/sessionController.js';
+import auth from '../middleware/authenticate.js';
 
 const router = express.Router();
 
@@ -12,6 +13,6 @@ router.get('/callbackGithub', passport.authenticate('github', { failureRedirect:
 router.get('/current', passport.authenticate('current', { session: false }), (req, res) => {
     res.json({ user: req.user });
 });
-router.get('/logout', sessionController.userLogout);
+router.get('/logout', auth, sessionController.userLogout);
 
 export default router;

@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             window.location.href = `/carts/${cartId}`;
         });
     }
+    const goToPremiumBtn = document.getElementById('goToPremium');
+    if (goToPremiumBtn) {
+        goToPremiumBtn.addEventListener('click', function () {
+            window.location.href = `/products/premium`;
+        });
+    }
 
     async function addToCart(cartId, productId) {
         try {

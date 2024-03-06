@@ -30,6 +30,16 @@ class HomeRenderController {
         const user = req.user;
         res.status(200).render('profile', { session: { user } });
     }
+    passwordReset = (req, res) => {
+        let { error, message } = req.query;
+        res.setHeader('Content-Type', 'text/html');
+        res.status(200).render('passwordReset', { error, message });
+    };
+    passwordReset2 = (req, res) => {
+        let { error, message } = req.query;
+        res.setHeader('Content-Type', 'text/html');
+        res.status(200).render('passwordReset2', { error, message });
+    };
 }
 
 export default new HomeRenderController();

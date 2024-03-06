@@ -2,6 +2,9 @@
 <div style="color: green;">{{message}}</div>
 {{/if}}
 <h1>Products</h1>
+{{#if (eq session.user.role "premium")}}
+<p style="color:red;">Premium Acces: <button id="goToPremium">Go to My Products</button></p>
+{{/if}}
 <button id="goToCartBtn">Go to Cart</button>
 
 

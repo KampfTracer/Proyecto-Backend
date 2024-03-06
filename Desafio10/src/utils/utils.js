@@ -34,6 +34,10 @@ export const validateProducts = (productsData) => {
             invalidFields.push('Invalid format for thumbnails field in a product');
         }
 
+        if (productData.stock <= 0 || productData.price <= 0) {
+            invalidFields.push('Stock must be greater than 0 and price cannot be negative');
+        }
+
         if (productInvalidFields.length > 0) {
             invalidFields.push(`Invalid data types in product fields: ${productInvalidFields.join(', ')}`);
         }

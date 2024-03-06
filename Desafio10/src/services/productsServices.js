@@ -32,6 +32,14 @@ class ProductService {
     async updateProduct(productId, updates) {
         return await this.productManager.updateProduct(productId, updates);
     }
+
+    async getProductsByOwner(ownerEmail) {
+        return await this.productManager.getProductsByOwner(ownerEmail);
+    }
+
+    async productRestore(pid) {
+        return await this.productManager.productRestore(pid);
+    }
 }
 
 export default ProductService;

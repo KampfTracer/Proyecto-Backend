@@ -2,7 +2,7 @@ import { Server } from 'socket.io';
 import messageModel from '../dao/models/messages.model.js';
 import ProductService from '../services/productsServices.js';
 
-export const initializeSocket = (server, app) => {
+export const initializeSocket = (server, app, req) => {
     const io = new Server(server);
     app.set('io', io);
 
@@ -11,7 +11,7 @@ export const initializeSocket = (server, app) => {
             socket.userName = userInfo.userName;
             socket.userEmail = userInfo.userEmail;
             io.emit('userConnected', socket.userName);
-            console.log(`${socket.userName} has connected`);
+            req.info(`${socket.userName} has connected to chat`)
         });
 
         try {
@@ -43,7 +43,7 @@ export const initializeSocket = (server, app) => {
         socket.on('disconnect', () => {
             if (socket.userName) {
                 io.emit('userDisconnected', socket.userName);
-                console.log(`${socket.userName} has disconnected`);
+                req.info(`${socket.userName} has disconnected from chat`);
             }
         });
     });

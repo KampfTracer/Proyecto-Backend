@@ -12,5 +12,8 @@ const accessControlMiddleware = (roles) => (req, res, next) => {
 };
 
 export const userAdminAccessMiddleware = accessControlMiddleware(['user', 'admin']);
+export const userPremiumAccessMiddleware = accessControlMiddleware(['user', 'premium']);
+export const adminPremiumAccessMiddleware = accessControlMiddleware(['admin', 'premium']);
 export const userAccessMiddleware = accessControlMiddleware(['user']);
+export const premiumAccessMiddleware = accessControlMiddleware(['premium']);
 export const adminAccessMiddleware = accessControlMiddleware(['admin']);

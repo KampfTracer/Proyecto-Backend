@@ -105,6 +105,33 @@ class ProductManager {
             return "Error setting product as unavailable.";
         }
     }
+
+    async getProductsByOwner(email) {
+        try {
+            const products = await productModel.find({ owner: email }).lean();
+            return products;
+        } catch (error) {
+            console.error('Error reading products by owner from MongoDB:', error.message);
+            throw error;
+        }
+    }
+
+    async productRestore(pid) {
+        try {
+            const product = await productModel.findOne({ _id: pid });
+            if (!product) {
+                return "Product not found";
+            }
+    
+            product.status = true;
+            await product.save();
+    
+            return "Product status restored correctly";
+        } catch (error) {
+            console.error('Error restoring product status in MongoDB:', error.message);
+            return "Error restoring product status.";
+        }
+    }
 }
 
 export default ProductManager;

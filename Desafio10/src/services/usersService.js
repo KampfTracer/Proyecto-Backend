@@ -37,6 +37,35 @@ class UserService {
             throw error;
         }
     }
+
+    async updateUser(userId, updatedUserData) {
+        try {
+            const updatedUser = await usersModel.findByIdAndUpdate(userId, updatedUserData, { new: true });
+            return updatedUser;
+        } catch (error) {
+            throw error;
+        }
+    }
+
+    async getUserById(userId) {
+        try {
+            let user = await usersModel.findById(userId).lean();
+            if (user) {
+                delete user.password;
+            }
+            return user;
+        } catch (error) {
+            throw error;
+        }
+    }
+    async updateOne(filter, update) {
+        try {
+            const result = await usersModel.updateOne(filter, update);
+            return result;
+        } catch (error) {
+            throw error;
+        }
+    }
 }
 
 export default UserService;

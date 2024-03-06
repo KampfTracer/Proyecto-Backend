@@ -14,7 +14,14 @@ a {
 a.logout {
     color: red;
 }
-
+a.password {
+    color: rgb(0, 4, 255);
+    display:inline;
+    text-decoration: underline;
+    border: 0px solid #ccc;
+    padding: 0px;
+    margin-right: 0px;
+}
 h3 {
     margin: 0;
 }
@@ -46,6 +53,12 @@ h3 {
 }
 
 #productosContainerHome {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#premiumProducts {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;

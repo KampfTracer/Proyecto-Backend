@@ -59,7 +59,7 @@ async function renderizarProductosAdmin(productos) {
 
 async function deleteProduct(productId) {
     try {
-        const response = await fetch(`/realtimeproducts/${productId}`, {
+        const response = await fetch(`/api/products/${productId}`, {
             method: "DELETE",
         });
 
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("FormData:", formData);
 
             try {
-                const response = await fetch("/realtimeproducts", {
+                const response = await fetch("/api/products", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

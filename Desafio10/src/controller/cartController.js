@@ -73,6 +73,12 @@ class CartController {
         try {
             const cartId = req.params.cid;
             const productId = req.params.pid;
+            
+            const product = await this.productService.getProductById(productId);
+    
+            if (product.owner === req.user.email) {
+                return res.status(400).json({ error: "You cannot add your own product to your cart." });
+            }
             const result = await this.cartService.addProductToCart(cartId, productId);
 
             if (result.status === 200) {

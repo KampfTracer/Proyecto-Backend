@@ -66,29 +66,74 @@ class ProductsController {
 
     deleteProduct = async (req, res) => {
         try {
-            const productId = req.params.pid;
-            const result = await this.productService.deleteProduct(productId);
-
-            if (result === "Product removed correctly") {
-                const updatedProductList = await this.productService.getProducts();
-                req.app.get('io').emit('productos', updatedProductList.payload);
-                res.status(200).json({ message: "Product removed correctly" });
-            } else if (!result) {
-                throw new CustomError(
-                    ErrorCodes.PRODUCT_NOT_FOUND.name,
-                    ErrorCodes.PRODUCT_NOT_FOUND.message,
-                    ErrorCodes.PRODUCT_NOT_FOUND.code,
-                    'Product not found in the database'
-                );
+            const { pid } = req.params;
+            const { role } = req.user;
+    
+            if (role === 'admin') {
+                const result = await this.productService.deleteProduct(pid);
+                if (result === "Product removed correctly") {
+                    const updatedProductList = await this.productService.getProducts();
+                    req.app.get('io').emit('productos', updatedProductList.payload);
+                    req.logger.info(`User ${req.user.email} deleted product id: ${pid}`)
+                    return res.status(200).json({ message: "Product removed correctly" });
+                } else if (!result) {
+                    throw new CustomError(
+                        ErrorCodes.PRODUCT_NOT_FOUND.name,
+                        ErrorCodes.PRODUCT_NOT_FOUND.message,
+                        ErrorCodes.PRODUCT_NOT_FOUND.code,
+                        'Product not found in the database'
+                    );
+                } else {
+                    throw new CustomError(
+                        ErrorCodes.INTERNAL_SERVER_ERROR.name,
+                        ErrorCodes.INTERNAL_SERVER_ERROR.message,
+                        ErrorCodes.INTERNAL_SERVER_ERROR.code,
+                        'Internal server error'
+                    );
+                }
+            } else if (role === 'premium') {
+                const { email } = req.user;
+                const product = await this.productService.getProductById(pid);
+                if (product.owner === email) {
+                    const result = await this.productService.deleteProduct(pid);
+                    if (result === "Product removed correctly") {
+                        const updatedProductList = await this.productService.getProducts();
+                        req.app.get('io').emit('productos', updatedProductList.payload);
+                        req.logger.info(`User ${req.user.email} deleted product id: ${pid}`)
+                        return res.status(200).json({ message: "Product removed correctly" });
+                    } else if (!result) {
+                        throw new CustomError(
+                            ErrorCodes.PRODUCT_NOT_FOUND.name,
+                            ErrorCodes.PRODUCT_NOT_FOUND.message,
+                            ErrorCodes.PRODUCT_NOT_FOUND.code,
+                            'Product not found in the database'
+                        );
+                    } else {
+                        throw new CustomError(
+                            ErrorCodes.INTERNAL_SERVER_ERROR.name,
+                            ErrorCodes.INTERNAL_SERVER_ERROR.message,
+                            ErrorCodes.INTERNAL_SERVER_ERROR.code,
+                            'Internal server error'
+                        );
+                    }
+                } else {
+                    throw new CustomError(
+                        ErrorCodes.UNAUTHORIZED_ACCESS.name,
+                        ErrorCodes.UNAUTHORIZED_ACCESS.message,
+                        ErrorCodes.UNAUTHORIZED_ACCESS.code,
+                        'Unauthorized access'
+                    );
+                }
             } else {
                 throw new CustomError(
-                    ErrorCodes.INTERNAL_SERVER_ERROR.name,
-                    ErrorCodes.INTERNAL_SERVER_ERROR.message,
-                    ErrorCodes.INTERNAL_SERVER_ERROR.code,
-                    'Internal server error'
+                    ErrorCodes.UNAUTHORIZED_ACCESS.name,
+                    ErrorCodes.UNAUTHORIZED_ACCESS.message,
+                    ErrorCodes.UNAUTHORIZED_ACCESS.code,
+                    'Unauthorized access'
                 );
             }
         } catch (error) {
+            console.error(`Error deleting the product: ${error.message}`);
             return res.status(error.code || 500).json({ name: error.name, code: error.code, message: error.message });
         }
     };
@@ -118,6 +163,7 @@ class ProductsController {
             if (reStatus === 201) {
                 const updatedProductList = await this.productService.getProducts();
                 req.app.get('io').emit('productos', updatedProductList.payload);
+                req.logger.info(`User ${req.user.email} added ${productsData.length} products, code: ${productsData[0].code}`)
             }
 
             return res.status(reStatus).json({ messages: results });
@@ -144,6 +190,84 @@ class ProductsController {
         } catch (error) {
             console.error(`Error in the product updating path: ${error.message}`);
             res.status(500).json({ error: "Server error!" });
+        }
+    };
+
+    getProductsByOwner = async (req, res) => {
+        try {
+            const ownerEmail = req.user.email;
+
+            const result = await this.productService.getProductsByOwner(ownerEmail);
+
+            return result
+        } catch (error) {
+            console.error('Error reading products from MongoDB:', error.message);
+            throw error;
+        }
+    };
+
+    productRestore = async (req, res) => {
+        try {
+            const productId = req.params.pid;
+            const currentUserEmail = req.user.email;
+            const product = await this.productService.getProductById(productId);
+            if (!product) {
+                throw new CustomError(
+                    ErrorCodes.PRODUCT_NOT_FOUND.name,
+                    ErrorCodes.PRODUCT_NOT_FOUND.message,
+                    ErrorCodes.PRODUCT_NOT_FOUND.code,
+                    'Product not found in the database'
+                );
+            }
+            if (product.owner !== currentUserEmail) {
+                throw new CustomError(
+                    ErrorCodes.NOT_AUTHORIZED.name,
+                    ErrorCodes.NOT_AUTHORIZED.message,
+                    ErrorCodes.NOT_AUTHORIZED.code,
+                    'You are not authorized to restore the status of this product'
+                );
+            }
+            const result = await this.productService.productRestore(productId);
+            if (result === "Product status restored correctly") {
+                req.logger.info(`User ${req.user.email} restored product id: ${productId}`)
+                res.status(200).json({ message: "Product status restored correctly" });
+            } else {
+                throw new CustomError(
+                    ErrorCodes.INTERNAL_SERVER_ERROR.name,
+                    ErrorCodes.INTERNAL_SERVER_ERROR.message,
+                    ErrorCodes.INTERNAL_SERVER_ERROR.code,
+                    'Internal server error'
+                );
+            }
+        } catch (error) {
+            return res.status(error.code || 500).json({ name: error.name, code: error.code, message: error.message });
+        }
+
+
+    };
+    productView = async (req, res) => {
+        try {
+            let {message}=req.query
+            const limit = req.query.limit || 10;
+            const productsData = await this.productService.getProducts(req);
+            const user = req.user;
+            res.render('products', { session: { user }, productsData, message, currentLimit: limit });
+        } catch (error) {
+            console.error('Error retrieving products:', error.message);
+            res.status(500).json({ error: 'Internal Server Error' });
+        }
+    };
+
+    productPremiumView = async (req, res) => {
+        try {
+            let {message}=req.query
+            const user = req.user;
+            const ownerEmail = user.email;
+            const productsData = await this.productService.getProductsByOwner(ownerEmail);
+            res.render('premiumProducts', { session: { user }, productsData, message });
+        } catch (error) {
+            console.error('Error retrieving products:', error.message);
+            res.status(500).json({ error: 'Internal Server Error' });
         }
     };
 }
