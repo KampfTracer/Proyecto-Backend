@@ -1,2 +1,16 @@
 {"level":"info","message":"User null logged with Github","timestamp":"2024-03-02T04:20:39.430Z"}
 {"level":"info","message":"User adminCoder@test.com logged in","timestamp":"2024-03-02T04:21:07.539Z"}
+{"level":"info","message":"Servidor encendido y escuchando el puerto 8080","timestamp":"2024-03-06T18:34:16.859Z"}
+{"level":"info","message":"DataBase Online!","timestamp":"2024-03-06T18:34:17.703Z"}
+{"level":"info","message":"User franciscogabrielaguilera@gmail.com created","timestamp":"2024-03-06T18:36:15.432Z"}
+{"level":"info","message":"User franciscogabrielaguilera@gmail.com logged in","timestamp":"2024-03-06T18:36:19.292Z"}
+{"level":"info","message":"User franciscogabrielaguilera@gmail.com logged out","timestamp":"2024-03-06T18:36:36.245Z"}
+{"level":"info","message":"User null logged with Github","timestamp":"2024-03-06T18:36:55.994Z"}
+{"level":"info","message":"User null logged out","timestamp":"2024-03-06T18:36:59.572Z"}
+{"level":"info","message":"User adminCoder@test.com logged in","timestamp":"2024-03-06T18:41:29.979Z"}
+{"level":"info","message":"TEST","timestamp":"2024-03-06T18:41:51.090Z"}
+{"level":"info","message":"User adminCoder@test.com logged out","timestamp":"2024-03-06T18:42:01.854Z"}
+{"level":"info","message":"User null logged with Github","timestamp":"2024-03-06T18:42:05.084Z"}
+{"level":"info","message":"User null logged out","timestamp":"2024-03-06T18:42:09.617Z"}
+{"level":"info","message":"Servidor encendido y escuchando el puerto 8080","timestamp":"2024-03-06T19:07:43.777Z"}
+{"level":"info","message":"DataBase Online!","timestamp":"2024-03-06T19:07:44.435Z"}
